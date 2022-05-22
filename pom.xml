@@ -24,8 +24,7 @@
 		<sonar.host.url>http://43.204.96.59:9000/malathi/</sonar.host.url>
                 <sonar.login>b15e9b050d7013837043b5cc7c24b057ddeefaea</sonar.login>
 		
-             
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+         	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 	</properties>

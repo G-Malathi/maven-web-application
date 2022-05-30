@@ -28,7 +28,6 @@ node{
         sshagent(['6124963a-f050-4c4e-97b8-aea33aabe034']) {
     sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.233.155.233:/opt/apache-tomcat-9.0.62/webapps/"
 }
-    */
-    }
-    
+}
+*/    
 }

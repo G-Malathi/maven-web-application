@@ -32,6 +32,7 @@ node{
     
     //Get the code from GitHub Repo
      def mavenHome = tool name: 'maven3.8.4'
+     Try{
      stage('CheckoutCode'){
      git branch: 'development', credentialsId: 'd02b8059-b705-4da9-b3f9-414b65b2db86', url: 'https://github.com/G-Malathi/maven-web-application.git'   
     
@@ -57,12 +58,13 @@ node{
     sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.233.155.233:/opt/apache-tomcat-9.0.62/webapps/"
 }
 }
-*/    
-}//Try closingcatch(e){
+*/
+}//Try closing
+catch(e){
 currentBuild.result= "FAILED"
-}
+}//catch closing
 finally{
-sendSlackNotifications(currentBuild.result)
+sendSlackNotifications(cerrentBui:d.result)
 }
 }//node closing
 

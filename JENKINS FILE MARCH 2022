@@ -60,10 +60,11 @@ node{
 }
 */
 }//Try closing
-catch (e){
+catch (e) {
 currentBuild.result = "FAILED"
+throw e
 }//catch closing
-finally{
+finally {
 sendSlackNotifications(cerrentBuild.result)
 }//finally closing
 

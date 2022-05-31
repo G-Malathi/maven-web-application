@@ -64,7 +64,7 @@ catch(e){
 currentBuild.result= "FAILED"
 }//catch closing
 finally{
-sendSlackNotifications(cerrentBui:d.result)
+sendSlackNotifications(cerrentBuild.result)
 }//finally closing
 }//node closing
 
